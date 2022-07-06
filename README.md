@@ -6,7 +6,6 @@ Unofficial PyTorch implementation of [Few-Shot Font Generation by Learning Fine-
 
 ## TODO
 - [ ] model architecture
-- [ ] check scratch transformer works 
 - [ ] Reference Selection 
 - [ ] download & load dataset
 - [ ] training & evluation
