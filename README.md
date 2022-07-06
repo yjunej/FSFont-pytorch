@@ -1,2 +1,3 @@
-# few-shot-font-generation-by-learning-fine-grained-local-styles-pytorch
-few-shot-font-generation-by-learning-fine-grained-local-styles-pytorch
+# Few-Shot Font Generation by Learning Fine-Grained Local Styles
+
+Unofficial PyTorch implementation of Few-Shot Font Generation by Learning Fine-Grained Local Styles
