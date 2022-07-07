@@ -8,7 +8,7 @@ Unofficial PyTorch implementation of [Few-Shot Font Generation by Learning Fine-
 - [X] model architecture
 - [ ] Reference Selection 
 - [ ] download & load dataset
-- [ ] training & evluation
+- [ ] training & evaluation
 - [ ] visualization
 
 ## Setup
