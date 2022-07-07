@@ -6,15 +6,15 @@ from einops import rearrange
 
 
 class StyleAggregationModule(nn.Module):
-    def __init__(self, num_heads=8):
+    def __init__(self, num_heads=8, hidden_dim=256):
         super(StyleAggregationModule, self).__init__()
 
         self.num_heads = num_heads
-        self.q_proj = nn.Linear(512, 512 * num_heads)
-        self.k_proj = nn.Linear(512, 512 * num_heads)
-        self.v_proj = nn.Linear(512, 512 * num_heads)
+        self.q_proj = nn.Linear(hidden_dim, hidden_dim * num_heads)
+        self.k_proj = nn.Linear(hidden_dim, hidden_dim * num_heads)
+        self.v_proj = nn.Linear(hidden_dim, hidden_dim * num_heads)
         self.softmax = nn.Softmax(dim=-1)
-        self.multihead_concat_fc = nn.Linear(512 * num_heads, 512)
+        self.multihead_concat_fc = nn.Linear(hidden_dim * num_heads, hidden_dim)
 
 
     def forward(self, content_feature_map, reference_map_list):

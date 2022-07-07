@@ -3,6 +3,7 @@ import torch.nn as nn
 
 from model.custom_blocks import ConvolutionBlock
 
+
 class ContentEncoder(nn.Module):
     def __init__(self, input_channels=1):
         super(ContentEncoder, self).__init__()

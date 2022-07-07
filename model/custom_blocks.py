@@ -48,7 +48,7 @@ class ResidualBlock(nn.Module):
         super(ResidualBlock, self).__init__()
         self.conv_blocks = nn.Sequential(
             ConvolutionBlock(in_dim, out_dim, kernel_size, normalization, activation, padding, stride, downsample=None),
-            ConvolutionBlock(in_dim, out_dim, kernel_size, normalization, activation, padding, stride, downsample=None)
+            ConvolutionBlock(out_dim, out_dim, kernel_size, normalization, activation, padding, stride, downsample=None)
         )
         if downsample is not None:
             self.downsample = get_downsample(downsample)
