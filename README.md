@@ -21,7 +21,8 @@ pip install -r requirements.txt
 * 'ids.txt' is derived from [CHISE](https://www.chise.org/). License follow their terms.
 
 ## Citations
-```@misc{https://doi.org/10.48550/arxiv.2205.09965,
+```
+@misc{https://doi.org/10.48550/arxiv.2205.09965,
   doi = {10.48550/ARXIV.2205.09965},
   url = {https://arxiv.org/abs/2205.09965},
   author = {Tang, Licheng and Cai, Yiyang and Liu, Jiaming and Hong, Zhibin and Gong, Mingming and Fan, Minhu and Han, Junyu and Liu, Jingtuo and Ding, Errui and Wang, Jingdong},
